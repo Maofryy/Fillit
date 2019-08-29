@@ -6,18 +6,14 @@
 #    By: mbenhass <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/21 21:44:08 by mbenhass          #+#    #+#              #
-#    Updated: 2019/08/26 11:15:34 by mbenhass         ###   ########.fr        #
+#    Updated: 2019/08/29 16:31:40 by mbenhass         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC_PATH = srcs 
-
-OBJ_PATH = objs
-
-CPPFLAGS = -Iincludes
+CPPFLAGS = -I.
 
 LDFLAGS = -Llibft
 LDLIBS = -lft
@@ -90,10 +86,7 @@ SRC_NAME = ft_bzero.c \
 	   ft_strnjoinfree.c \
 	   get_next_line.c \
 
-OBJ_NAME = $(SRC_NAME:.c=.o)
-
-SRC = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
-OBJ = $(addprefix $(OBJ_PATH)/,$(OBJ_NAME))
+OBJ = $(SRC_NAME:.c=.o)
 
 GREEN = \033[0;32m
 RED = \033[0;31m
@@ -104,14 +97,12 @@ all : $(NAME)
 $(NAME) : $(OBJ)
 	@ar rcs $(NAME) $(OBJ) && echo "\n$(GREEN)$@ successfully created$(WHITE)"
 
-$(OBJ_PATH)/%.o: srcs/%.c
-	@mkdir $(OBJ_PATH) 2> /dev/null || true
-	@$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $<
+/%.o: %.c
+	@@$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $<
 	@echo "$(GREEN)$@$(WHITE)"
 
 clean :
 	@rm -f $(OBJ) && echo "$(RED)objects successfully deleted$(WHITE)"
-	@rmdir $(OBJ_PATH) 2> /dev/null || true
 
 fclean : clean
 	@rm -f $(NAME) && echo "$(RED)$(NAME) deleted$(WHITE)"
