@@ -6,12 +6,11 @@
 /*   By: rboissel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/30 09:11:14 by rboissel          #+#    #+#             */
-/*   Updated: 2019/08/25 16:50:27 by rboissel         ###   ########.fr       */
+/*   Updated: 2019/08/29 16:40:37 by mbenhass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
-#include "libft/includes/libft.h"
 #include <stdlib.h>
 
 void	display_grid(t_grid_struct *grid_struct)

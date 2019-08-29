@@ -6,12 +6,11 @@
 /*   By: rboissel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/31 12:12:15 by rboissel          #+#    #+#             */
-/*   Updated: 2019/08/25 13:37:11 by ssahai-          ###   ########.fr       */
+/*   Updated: 2019/08/29 16:40:06 by mbenhass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
-#include "libft/includes/libft.h"
 
 t_boolean	try_placing(t_grid_struct *grid_struct, t_tetraminos *tetramino)
 {

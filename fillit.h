@@ -6,13 +6,13 @@
 /*   By: rboissel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/02 10:15:16 by rboissel          #+#    #+#             */
-/*   Updated: 2019/08/26 11:43:22 by mbenhass         ###   ########.fr       */
+/*   Updated: 2019/08/29 16:39:52 by mbenhass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLIT_H
 # define FILLIT_H
-# include "libft/includes/libft.h"
+# include "libft/libft.h"
 
 typedef enum
 {

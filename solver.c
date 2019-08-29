@@ -6,12 +6,11 @@
 /*   By: rboissel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/25 15:17:43 by rboissel          #+#    #+#             */
-/*   Updated: 2019/08/26 11:42:07 by mbenhass         ###   ########.fr       */
+/*   Updated: 2019/08/29 16:40:17 by mbenhass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
-#include "libft/includes/libft.h"
 #include <unistd.h>
 #include <stdlib.h>
 

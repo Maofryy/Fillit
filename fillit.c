@@ -6,11 +6,10 @@
 /*   By: rboissel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/02 10:46:12 by rboissel          #+#    #+#             */
-/*   Updated: 2019/08/26 12:32:24 by mbenhass         ###   ########.fr       */
+/*   Updated: 2019/08/29 16:46:23 by mbenhass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/includes/libft.h"
 #include "fillit.h"
 #include <fcntl.h>
 #include <stdlib.h>
@@ -50,7 +49,7 @@ void		reset_position(t_tetraset *tetraset, int i)
 
 int			ft_print_usage(t_tetraset *tetraset)
 {
-	ft_putstr("usage : ./fillit tetraminos_list_file\n");
+	ft_putstr("usage : ./fillit tetraminos_file\n");
 	free(tetraset);
 	return (0);
 }
